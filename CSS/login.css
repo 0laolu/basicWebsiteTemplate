@@ -1,0 +1,187 @@
+/* ------------ */
+/* Reset */    
+/* ------------ */
+
+*, 
+*::before,
+*::after {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+input, 
+button, 
+textarea {
+    font: inherit;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+
+.primary-header {
+    margin-bottom: 6rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    width: 35%;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.nav-bar li.active {
+    border-bottom: 3px solid darkred;
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+.page-wrapper {
+    padding: 0 5rem;
+}
+
+.page-header {
+    width: 40%;
+    margin-inline: 60%;
+}
+
+.page-header h4 {
+    color: grey;
+    font-size: 3rem;
+    font-weight: normal;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 2rem;
+    letter-spacing: 0.03rem;
+}
+
+.form-section {
+    border: 1px solid lightgrey;
+    border-radius: 0.7rem;
+    width: 32%;
+    padding: 2rem 0 4rem 0;
+    margin-inline: 60%;
+}
+
+.form-section p {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+div.input-container {
+    width: 85%;
+    margin-inline: auto;
+}
+
+div.field {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+div.field:last-child {
+    margin-bottom: 0;
+}
+
+div.field label {
+    display: block;
+    color: black;
+    font-weight: 400;
+    font-size: 1.15rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+}
+
+div.field input {
+    color: grey;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+
+::placeholder {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: grey;
+}
+
+.submit-btn-container {
+    width: 100%;
+    /* text-align: center; */
+    padding: 3rem 0 0;
+}
+
+.submit-btn {
+    background-color: grey;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 5px;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+
+.register-btn {
+    color: grey;
+    font-size: 1.1rem;
+    width: 32%;
+    padding-top: 3rem;
+    text-align: center;
+    word-spacing: 0.07rem;
+    margin-inline: 60%;
+}
+
+.register-btn a{
+    color: grey;
+    text-decoration: none;
+    font-weight: 600;
+}

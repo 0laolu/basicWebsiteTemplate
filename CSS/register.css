@@ -1,0 +1,259 @@
+/* ------------ */
+/* Reset */    
+/* ------------ */
+
+*, 
+*::before,
+*::after {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+input, 
+button, 
+textarea {
+    font: inherit;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+
+.primary-header {
+    margin-bottom: 2rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 35%;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.nav-bar li.active {
+    border-bottom: 3px solid darkred;
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+.page-wrapper {
+    padding: 0 5rem;
+}
+
+.page-header {
+    width: 40%;
+    margin-inline: 37%;
+}
+
+.page-header h4 {
+    color: grey;
+    font-size: 3rem;
+    font-weight: normal;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 2rem;
+    letter-spacing: 0.03rem;
+}
+
+.form-section {
+    border: 1px solid lightgrey;
+    border-radius: 0.7rem;
+    width: 60%;
+    padding: 3rem 0;
+    margin-inline: 37%;
+}
+
+div.input-container {
+    width: 92%;
+    margin-inline: auto;
+}
+
+div.parent-field {
+    display: flex;
+    width: 100%;
+}
+
+div.field {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+div.field:last-child {
+    margin-bottom: 0;
+}
+
+div.field label {
+    display: block;
+    color: black;
+    font-weight: 400;
+    font-size: 1.15rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+}
+
+div.field input{
+    color: grey;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+
+::placeholder, .select-gender span {
+    /* border: 1px solid green; */
+    color: grey;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.gender-container {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.gender-container p {
+    color: black;
+    font-weight: 400;
+    font-size: 1.15rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+}
+
+.select-gender {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0.8rem;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.select-gender img {
+    transition: all 0.4s;
+}
+
+.select-gender img.active {
+    transform: rotateX(180deg);
+}
+
+.gender-dropdown-container {
+    /* background-color: rgba(0, 0, 0, 0.03); */
+    width: 100%;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    opacity: 0;
+    max-height: 0;
+    transition: all ease-in 0.4s;
+    z-index: -1000;
+    overflow-y: hidden;
+}
+
+.gender-dropdown-container.active {
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 1.5rem;
+    opacity: 1;
+    max-height: 6rem;
+    z-index: 1000;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.gender-dropdown-list .radio {
+    display: none;
+}
+
+.gender-dropdown-list label {
+    color: grey;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    letter-spacing: 0.03rem;
+}
+
+.submit-btn-container {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0 0;
+}
+
+.submit-btn {
+    background-color: grey;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 35%;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn {
+    color: grey;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 32%;
+    padding: 3rem 0 10rem 0;
+    word-spacing: 0.07rem;
+    margin-inline: 51%;
+}
+
+.login-btn a{
+    color: grey;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
